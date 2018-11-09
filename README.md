@@ -35,6 +35,10 @@ Some of the popular libraries used for simple random data anslysis, permutations
 
 ![image](https://user-images.githubusercontent.com/36244887/39406222-0630391e-4bab-11e8-870b-18dad59bb624.png)
 <p align="center">
+        
+## Project Plan
+
+![image](https://user-images.githubusercontent.com/36244887/48293640-07086800-e478-11e8-8d98-45742c833038.JPG)
 
 ## 2.0 Question 1: Explain the overall purpose of the package
 
