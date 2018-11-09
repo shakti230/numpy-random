@@ -6,6 +6,8 @@
 </br>
 </p>
 
+![image](https://user-images.githubusercontent.com/36244887/48290610-690ea080-e46b-11e8-85b7-5a05ac318afd.JPG)
+
 ## Table of Contents
 
 #### 1.0 Invetigation
@@ -38,32 +40,16 @@ Some of the popular libraries used for simple random data anslysis, permutations
 ## 2.0 Question 1: Explain the overall purpose of the package
 
 NumPy is the fundamental package for scientific computing with Python. It contains among other things:
-
-- a powerful N-dimensional array object    
+- a powerful N-dimensional array object 
 - sophisticated (broadcasting) functions
 - tools for integrating C/C++ and Fortran code
 - useful linear algebra, Fourier transform, and random number capabilities
 
-NumPy array is a central data structure of the numpy library. An array contains information about the raw data, how to locate an element and how to interpret an element.
-Numpy is an open source add ón to python to provide common mathematical and numerical routines in pre-compiled fast functions.
-The NumPy (Numeric Python) package provides basic routines for manipulating large arrays and matrices of numeric data.
-
-Python supports real numbers and integers. It allows you to create complicated data structures with lists/sets. It is very easy to write algorithms to solve scientific problems. Python is a dynamic language where almost all functions and operators are polymorphic. Python doesn't really know what needs to be done, at a hardware level, until it hits that operation. Unfortunately, this rules out any optimizations that can be made by rearranging operations to take advantage of how they are stored in memory and cache.
-One property of Python that causes a problem is polymorphism. Python needs to check the operands of any operator or function to see what type it is, decide whether this particular operand or function can handle these data types, then use the correct form of the operand or function to do the actual operation. In most cases, this would not really be an issue since modern computers have become so fast. But in many scientific algorithms, this means applying the same operations to thousands, or millions, of data points.
-This is where the numpy package becomes useful. Numpy adds extra overloading functions for the common operators and functions to help optimize uses of arrays.
-NumPY also uses external standard, optimized libraries written in C or FORTRAN to handle many of the actual manipulations on these array data types. This is handled by libraries like BLAS or lapack. Python simply does an initial check of each of the arrays in question, then hands them as a single object to the external library. The external library does all of the hard work, then hands back a single object containing the result. This removes the need for Python to check each element of code. NumPY module provides a very strong foundation to build up complex scientific workflows.
-
-Python has a strong position in scientific computing because it contains extensive ecosystem of scientific libraries as well as environments like numpy.
-
-NumPy : NumPy is the basic package for scientific computing in Python that provides multi-dimensional arrays and matrices, broadcasting functions, tools for integrating C/C++, Fortran code, mathematical, logical, shape manipulation, sorting, selecting, I/O, useful linear algebra, Fourier transform, random number capabilities, basic statistical operations and much more. NumPy can be used as an efficient multi-dimensional container of generic data and it is licensed under the BSD license.
-The Mayavi package basically integrates seamlessly with numpy and scipy for 3D plotting and can even be used in IPython interactively, similarly to Matplotlib.
-The h5py : The h5py package is a Pythonic interface to the HDF5 binary data format that uses straightforward NumPy as well as Python metaphors, such as dictionary and NumPy array syntax.
-
-PyTables : PyTables is a package for managing hierarchical datasets as well as designed to efficiently and easily cope with extremely large amounts of data. PyTables is built on top of the HDF5 library, that using Python language and the NumPy package.
-
-NumPy is an important Python extension module that provides easily efficient operation on arrays of homogeneous data. NumPy allows python to serve as a high-level language for manipulating numerical data, much such as IDL, MATLAB, or Yorick.
+NumPy array is a central data structure of the numpy library. An array contains information about raw data, how to locate and interpret elements. Numpy is an open source add ón to python and provides fast functions for pre compiled mathematical and numerical routines. The NumPy (Numeric Python) package allows for basic routines for manipulating large arrays and matrices of numeric data.
+Python supports real numbers and integers. It allows us to create complicated data structures with lists/sets. It is very easy to write algorithms to solve scientific problems. Python is a dynamic language where almost all functions and operators are polymorphic. Python doesn't understand what has to be done on a hardware level. As a result this rules out any optimisations that can be made by rearranging operations to take advantage of how they are stored in memory and cache.
+Polymorphism is one property of Python that causes a problem. Python needs to check the operands of any operator or function to see what type it is, decide whether this particular function can handle the data types, then use the correct form of the operand/function to do the actual operation. Generally this would not be an issue as computers run very fast. Saying this, in many scientific algorithms, this means applying the same operations to thousands or even millions of data points. Numpy comes in very useful at this point. Numpy adds extra overloading functions for the common operators and functions to help optimize uses of arrays. NumPY also uses external standard, optimized libraries written in C or FORTRAN to handle many of the actual manipulations on these array data types. This is handled by libraries like BLAS or lapack. Python simply does an initial check of each of the arrays and then hands them as a single object to the external library. The external library does all of the hard work and outputs a single object containing the result. This removes the need for Python to check each element of code. NumPY module provides an excellent foundation allowing the use of complex scientific workflows.
+NumPy is the basic package for scientific computing in Python that provides multi-dimensional arrays and matrices, broadcasting functions, tools for integrating C/C++, Fortran code, mathematical, logical, shape manipulation, sorting, selecting, I/O, useful linear algebra, Fourier transform, random number capabilities, basic statistical operations and much more. NumPy can be used as an efficient multi-dimensional container of generic data and it is licensed under the BSD license. The Mayavi package basically integrates seamlessly with numpy and scipy for 3D plotting and can even be used in IPython interactively, similarly to Matplotlib. The h5py : The h5py package is a Pythonic interface to the HDF5 binary data format that uses straightforward NumPy as well as Python metaphors, such as dictionary and NumPy array syntax. PyTables : PyTables is a package for managing hierarchical datasets as well as designed to efficiently and easily cope with extremely large amounts of data. PyTables is built on top of the HDF5 library, that using Python language and the NumPy package.
 One of NumPy’s very important goals is compatibility, which tries to retain all features supported by either of its predecessors. NumPy contains few linear algebra functions, even though these more properly belong in SciPy. SciPy contains more fully-featured versions of the linear algebra modules, and many other numerical algorithms.
-
 
 ## 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
 
