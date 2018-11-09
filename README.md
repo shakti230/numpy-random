@@ -35,7 +35,6 @@ Some of the popular libraries used for simple random data anslysis, permutations
 
 ![image](https://user-images.githubusercontent.com/36244887/39406222-0630391e-4bab-11e8-870b-18dad59bb624.png)
 <p align="center">
-  
 
 ## 2.0 Question 1: Explain the overall purpose of the package
 
@@ -81,9 +80,9 @@ import numpy as np
 This is the basic way to create a random number(s) which will be imported from the random module.
 
 Input:
-# Use the random function in numpy (  # Random float:  0.0 <= x < 1.0)
-# random.random() returns the next random floating point number in the range [0.0, 1.0).
-# a single float will be the output if no argument is defined.
+#Use the random function in numpy (  # Random float:  0.0 <= x < 1.0)
+#random.random() returns the next random floating point number in the range [0.0, 1.0).
+#a single float will be the output if no argument is defined.
 np.random.rand()
 
 Out[5]:
