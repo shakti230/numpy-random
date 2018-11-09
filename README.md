@@ -937,9 +937,22 @@ Output:
 
 
 ### 7.0 References
-
-*List all references used throughout the project.*
-
--
-
--
+https://www.packtpub.com/mapt/book/big_data_and_business_intelligence/9781785285110/2/ch02lvl1sec16/numpy-random-numbers
+https://machinelearningmastery.com/how-to-generate-random-numbers-in-python/
+https://www.investopedia.com/terms/s/simple-random-sample.asp
+https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.random.uniform.html
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.choice.html
+https://github.com/RitRa/Numpy_random/blob/master/numpy-random.ipynb
+https://www.quora.com/Probability-statistics-What-is-difference-between-binominal-poisson-and-normal-distribution
+https://www.stat.berkeley.edu/~hhuang/STAT141/More_on_%20distributions.pdf
+https://www.healthknowledge.org.uk/public-health-textbook/research-methods/1b-statistical-methods/statistical-distributions
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.binomial.html
+https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.random.uniform.html
+https://stackoverflow.com/questions/22639587/random-seed-what-does-it-do
+https://www.w3resource.com/python-exercises/numpy/index.php
+https://www.datasciencedata.com/2018/09/using-python-numpy-random-modules.html
+https://www.geeksforgeeks.org/numpy-random-rand-python/
+https://docs.python.org/2/library/random.html
+http://cmdlinetips.com/2018/03/probability-distributions-in-python/
+https://medium.com/@balamurali_m/normal-distribution-with-python-793c7b425ef0
+http://pytolearn.csd.auth.gr/d1-hyptest/11/norm-distro.html
