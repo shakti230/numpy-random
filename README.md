@@ -1,24 +1,23 @@
-# numpy-random
-Review of numpy.random package
-
 <p align="center">           
+
 <h1><b>Project 2018</b><br></h1>
 <h2>Programming for Data Analysis - Mary McDonagh</h2>
+<h2>numpy.random package in Python</h2>
 </br>
 </p>
 
-## Table of Contents
+### Table of Contents
 
-## 1.0 Invetigation
-## 2.0 Question 1: Explain the overall purpose of the package.
-## 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
-## 4.0 Question 3: Explain the use and purpose of at least five “Distributions” functions.
-## 5.0 Question 4: Explain the use of seeds in generating pseudorandom numbers.
-## 6.0 Summary
-## 7.0 References
+### 1.0 Invetigation
+### 2.0 Question 1: Explain the overall purpose of the package.
+### 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
+### 4.0 Question 3: Explain the use and purpose of at least five “Distributions” functions.
+### 5.0 Question 4: Explain the use of seeds in generating pseudorandom numbers.
+### 6.0 Summary
+### 7.0 References
 
 
-## 1. Investigation
+### 1. Investigation
 
 *Write some Python code to investigate numpy.*
 
@@ -35,7 +34,8 @@ Some of the popular libraries used for simple random data anslysis, permutations
 ![image](https://user-images.githubusercontent.com/36244887/39406222-0630391e-4bab-11e8-870b-18dad59bb624.png)
 <p align="center">
   
-## 2.0 Question 1: Explain the overall purpose of the package
+
+### 2.0 Question 1: Explain the overall purpose of the package
 
 NumPy is the fundamental package for scientific computing with Python. It contains among other things:
 
@@ -65,9 +65,10 @@ NumPy is an important Python extension module that provides easily efficient ope
 One of NumPy’s very important goals is compatibility, which tries to retain all features supported by either of its predecessors. NumPy contains few linear algebra functions, even though these more properly belong in SciPy. SciPy contains more fully-featured versions of the linear algebra modules, and many other numerical algorithms.
 
 
-## 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
+### 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
 
-### Using np.random functions to generate simple data
+
+#### Using np.random functions to generate simple data
 The examples below outline the use of random functions to generate random numbers based on the paremeters set. Most functions depend on the basic function random() , which generates a random float uniformly in the semi-open range 0.0, 1.0. Python uses the Mersenne twister as the core generator. The Mersenne Twister is one of the most extensively tested random number generators in existence.
 
 Display a table to show the simple random data functions and the description of each.
@@ -88,6 +89,7 @@ Output: insert image here
 
 #Import the numpy package
 import numpy as np
+
 
 #### Random.random()
 This is the basic way to create a random number(s) which will be imported from the random module.
@@ -320,7 +322,7 @@ array([[3, 3, 5],
        [2, 3, 6],
        [1, 4, 6]])
        
-# x was defined in the previous input. Now I will use shape to define how many rows and columns exist in x.
+#### x was defined in the previous input. Now I will use shape to define how many rows and columns exist in x.
 Input:
 x.shape
 
@@ -330,24 +332,24 @@ Output:
 
 x = np.sum(x, axis=2)
 
-# Plot a histogram to display x output.
+#### Plot a histogram to display x output.
 plt.hist(x);
 
 insert histogram graph
 
-# Calculate the sum of x.
+#### Calculate the sum of x.
 Input:
 np.sum(x)
 
 Output:
 104
 
-# Calculate the sum of the rows
+#### Calculate the sum of the rows
 np.sum(x, axis=0)
 
 array([47, 29, 47])
 
-# Calclate the sum of the columns
+#### Calclate the sum of the columns
 np.sum(x, axis=1)
 
 array([16,  9, 10, 13, 14, 14, 10, 12, 12, 13])
@@ -366,7 +368,7 @@ A scatter plot is used to visualize the relationship between variables measured 
 
 
 Input:
-# import matplotlib to plot a graph
+#### import matplotlib to plot a graph
 import matplotlib.pyplot as plt
 X = np.random.normal(0, 1, 1000)
 Y = np.random.normal(0, 1, 1000)
@@ -377,7 +379,7 @@ Output:
 insert scatter2 graph
 
 Input:
-# import matplotlib to plot a graph
+#### import matplotlib to plot a graph
 import matplotlib.pyplot as plt
 plt.hist(x)
 plt.show() 
@@ -403,19 +405,19 @@ Output:
 insert histogram51
 
 
-# Using Randn
+#### Using Randn
 Using randn to return a random sample for the normal distribution
 randn will generate a random sample from the normal distributionn set of data. A normal distribution has a mean of 0 and a standard deviation of 1.
 
 Input:
-# Return a sample for the standard normal distribution. n referring to the normal distribution.
+#### Return a sample for the standard normal distribution. n referring to the normal distribution.
 np.random.randn(3)
 
 Output:
 array([0.61750326, 0.29389352, 0.20851485])
 
 Input:
-# Return random integers from low (inclusive) to high(exclusive).
+#### Return random integers from low (inclusive) to high(exclusive).
 Return random integers from the “discrete uniform” distribution of the specified dtype in the “half-open” interval [low, high). If high is None (the default), then results are from [0, low).
 np.random.randint(5, size=20)
 
@@ -423,7 +425,7 @@ Output:
 array([4, 2, 2, 4, 1, 0, 0, 2, 0, 0, 1, 2, 2, 3, 4, 3, 3, 0, 1, 3])
 
 Input:
-# Randint creating a 5 by 4 array of ints between 0 and 4: 
+#### Randint creating a 5 by 4 array of ints between 0 and 4: 
 np.random.randint(5, size=(5, 4))
 
 Output:
@@ -448,7 +450,7 @@ Output:
 insert scatter 19
 
 Input:
-# import matplotlib for graphs
+#### import matplotlib for graphs
 import matplotlib.pyplot as plt 
 
 x = np.arange(0.0, 10.0, 0.01)
@@ -469,7 +471,7 @@ Output:
 scatter18
 
 
-# Plot 2 graphs 
+#### Plot 2 graphs 
 Input:
 plt.subplot(1, 2, 1)
 x =  np.random.normal(0.0, 10.0, 10000)
@@ -482,24 +484,24 @@ plt.show
 Output:
 insert hist 28
 
-# Using Uniform
+#### Using Uniform
 random.uniform(a, b) Return a random floating point number N such that a <= N <= b for a <= b and b <= N <= a for b < a.~
 The end-point value b may or may not be included in the range depending on floating-point rounding in the equation a + (b-a) * random().
 Essentially, random.uniform() is used to generate a random number between two numbers other than zero and 1. Using random.uniform we must specify the low and high numbers.
 
 Input:
-# generates random numbers from a uniform distribution (lower, higher, size)
+#### generates random numbers from a uniform distribution (lower, higher, size)
 np.random.uniform(-10, 8, 6)
 
 Output:
 array([-4.49293858,  7.20663687,  4.0094406 , -9.53500723,  4.99508228,
        -0.57488354])
        
-# Using Choice
-# Using choice within a random sample
+#### Using Choice
+#### Using choice within a random sample
 
 Input:
-# Generate a random sample within the range 1-5
+#### Generate a random sample within the range 1-5
 np.random.choice(range(1,5))
 
 Output:
@@ -507,21 +509,21 @@ Output:
 
 
 Input: 
-# Generates a random sample from a given 1-D array. Choose 3 random numbers between 1 & 5.
+#### Generates a random sample from a given 1-D array. Choose 3 random numbers between 1 & 5.
 np.random.choice(5 , 3)
 
 Output:
 array([1, 4, 2])
 
 Input: 
-# Generate randomly from either M or O.
+#### Generate randomly from either M or O.
 np.random.choice(["M", "O"])
 
 Output:
 'O'
 
 Input: 
-# Create a 2d array with 1 on the border and 0 on the inside
+#### Create a 2d array with 1 on the border and 0 on the inside
 x = np.ones((10,10))
 x[1:-1,1:-1] = 0
 print(x)
@@ -538,11 +540,11 @@ Output:
  [1. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
  [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]]
  
-# Using Shuffle
-# Using the shuffle function to shuffle the random array
+#### Using Shuffle
+#### Using the shuffle function to shuffle the random array
 
 Input:
-# Modify an array sequence by shuffling its contents. Shuffles the first axis of a multi-dimensional array.
+#### Modify an array sequence by shuffling its contents. Shuffles the first axis of a multi-dimensional array.
 arr = np.arange(10)
 np.random.shuffle(arr)
 arr
@@ -551,22 +553,18 @@ Output:
 array([6, 1, 9, 0, 2, 8, 7, 5, 3, 4])
 
 Input:
-# Create a 4x4 arrange of shuffled values
+#### Create a 4x4 arrange of shuffled values
 arr = np.arange(16).reshape((4, 4))
 np.random.shuffle(arr)
 arr
 
 Output:
-
-
-
-Out[84]:
 array([[ 4,  5,  6,  7],
        [ 8,  9, 10, 11],
        [ 0,  1,  2,  3],
        [12, 13, 14, 15]])
        
-# Simple Statistics
+#### Simple Statistics
 
 I can use python and numpy as a tool to describe my sets of data in the following ways:
 - Max/Min
@@ -578,7 +576,7 @@ Input:
 import numpy as np
 my_list = [12, 6, 13, 5, 4, 8, 3, 9, 15]
 
-# Displays the min and max values from my list
+#### Displays the min and max values from my list
 print("min: ", min(my_list))
 print("max: ", max(my_list))
 
@@ -593,7 +591,7 @@ Output:
 length:  9
 
 Input:
-# Displays the mean.
+#### Displays the mean.
 def mean(x):
     return sum(x) / len(x)
 
@@ -603,18 +601,18 @@ Output:
 average:  8.333333333333334
 
 Input:
-# Displays the standard deviation.
+#### Displays the standard deviation.
 print("Standard Deviation: ", np.std(my_list))
 
 Output:
 Standard Deviation:  4.0
 
-# 2. Explain the use of Permutation Functions
+### 2. Explain the use of Permutation Functions
 A permutation is the arrangement of a set of items in different order. Using permutation functions allows for the random permutation of a sequence, or to return a permuted range. First import itertools package to implement permutations method in python. This method takes a list as an input and return an object list of tuples that contain all permutation in a list form. Permutation is an arrangement of objects in a specific order. Order of arrangement of object is very important. The number of permutations on a set of n elements is given by n!. For example, there are 2! = 21 = 2 permutations of {1, 2}, namely {1, 2} and {2, 1}, and 3! = 32*1 = 6 permutations of {1, 2, 3}, namely {1, 2, 3}, {1, 3, 2}, {2, 1, 3}, {2, 3, 1}, {3, 1, 2} and {3, 2, 1}.
 
 Input:
-# import permutations
-# list items in the range of 1-4 and print
+#### import permutations
+#### list items in the range of 1-4 and print
 from itertools import permutations 
 x = list(permutations(range(1, 4))) 
 print(x) 
@@ -625,7 +623,7 @@ Output:
 We can also rearrange characters in a word to create other words. If all the n characters are unique, we should get n! unique permutations. We can make a list of words unique by converting it to a set.
 
 Input:
-# re-arrange charaters in the word dog to create other words
+#### re-arrange charaters in the word dog to create other words
 from itertools import permutations 
 for x in permutations('dog'):
     print("".join(x))
@@ -637,7 +635,7 @@ Output:
 We can also rearrange characters in a word to create other words. If all the n characters are unique, we should get n! unique permutations. We can make a list of words unique by converting it to a set.
 
 Input:
-# re-arrange charaters in the word dog to create other words
+#### re-arrange charaters in the word dog to create other words
 from itertools import permutations 
 for x in permutations('dog'):
     print("".join(x))
@@ -649,7 +647,7 @@ Output:
 We can also rearrange characters in a word to create other words. If all the n characters are unique, we should get n! unique permutations. We can make a list of words unique by converting it to a set.
 
 Input:
-#re-arrange charaters in the word dog to create other words
+#### Re-arrange charaters in the word dog to create other words
 from itertools import permutations 
 for x in permutations('dog'):
     print("".join(x))
@@ -675,7 +673,7 @@ Output:
 array([4, 1, 8, 2, 7])
 
 Input:
-# Generates the permutations for all of the elements of the set input (abcd)
+#### Generates the permutations for all of the elements of the set input (abcd)
 from itertools import permutations 
 ["".join(a) for a in permutations("abcd", 2)]
 
@@ -690,7 +688,7 @@ Output:
 Sample =  [8 3 6 1 7 5 4 0 2]
 
 Input:
-# Shuffle the sample from above output
+#### Shuffle the sample from above output
 shuffled = np.random.permutation(sample)
 print("Permuted = ",shuffled)
 
@@ -698,14 +696,14 @@ Output:
 Permuted =  [4 0 6 2 5 3 8 7 1]
 
 Input:
-# Example of reshuffling an array
+#### Example of reshuffling an array
 np.random.permutation([1, 78, 39, 2, 5])
 
 Output:
 array([ 5, 78,  1,  2, 39])
 
 Input:
-# Create a multi dimensional array
+#### Create a multi dimensional array
 arr = np.arange(9).reshape((3, 3))
 arr
 
@@ -715,7 +713,7 @@ array([[0, 1, 2],
        [6, 7, 8]])
        
 Input:
-# Example of reshuffling a multidimensional array 
+#### Example of reshuffling a multidimensional array 
 np.random.permutation(arr)
 
 Output:
@@ -724,7 +722,7 @@ array([[6, 7, 8],
        [3, 4, 5]])
        
 Input:
-#create a 3x3 matrix with numbers ranging from 3 to 10
+#### Create a 3x3 matrix with numbers ranging from 3 to 10
 x= np.arange(2, 11).reshape(3,3)
 print(x)
 
@@ -733,8 +731,8 @@ Output:
  [ 5  6  7]
  [ 8  9 10]]
  
-# Linear Algebra
-# Using numpy's linear algebra function to do simple maths on an array. 
+### Linear Algebra
+#### Using numpy's linear algebra function to do simple maths on an array. 
  
 Input:
 x = np.array([2,3,4], float)
@@ -746,8 +744,10 @@ Output:
 [2. 3. 4.]
 [5. 6. 7.]
 
-Output:
+Input:
 print(x+y)
+
+Output:
 [ 7.  9. 11.]
 
 Input:
@@ -774,35 +774,35 @@ print(y ** x)
 Output:
 [  25.  216. 2401.]
 
-# Question 3: Explain the use and purpose of at least five “Distributions” functions.
+### Question 3: Explain the use and purpose of at least five “Distributions” functions.
 
 A probabillity disctibution is a mathematical function that can provide the probability of occurence of different outcomes.
 -Continuous Distributions e.g normal (every normal density is non zero for all real numbers) -Multivariate Distributions -Discrete Distributions -Statistical Distributions -Contingency table functions
 
 Types of Distributions: -Binominal (is a discrete distribution having two parameters viz. sample size (n) and probability of success (p).) -Poisson (used to model events which take place continuously and at any given time independent of each other) -Normal (s a continuous distribution. It has the shape of a bell shaped curve.) -Exponential () -Uniform
 
-# Binomial distribution
+#### Binomial distribution
 Binomial distribution is the discrete probability distribution of the number of successes in a sequence of n independent binary (yes/no) experiments, each of which yields success with probability p. Such a success/failure experiment is also called a Bernoulli experiment or Bernoulli trial. In fact, when n = 1, the binomial distribution is a Bernoulli distribution. This draws samples from a binomial distribution.
 
 Input:
-# numpy.random.binomial(n,p, size=none)
-# Draw samples from a binomial distribution
+#### numpy.random.binomial(n,p, size=none)
+#### Draw samples from a binomial distribution
 n,p = 10, .5 # The number of trials, probability of each trial
 x = np.random.binomial(n, p, 1000)
 
 Output:
-# 20,000 trials of the model, and count the number that generate zero positive results.
+#### 20,000 trials of the model, and count the number that generate zero positive results.
 sum(np.random.binomial(9, 0.1, 20000) == 0)/20000.
 
 Output:
 0.38575
 
-# Poisson distribution
+### Poisson distribution
 Poisson distribution is a discrete probability distribution that expresses the probability of a number of events occurring in a fixed period of time if these events occur with a known average rate and independently of the time since the last event. For example, if you receive 3 calls on average between 8am-5pm each day, then the number of calls you will receive tomorrow between 8am-5pm should follow a Poisson distribution with parameter 3 λ = . This is under the assumption that the chance to receive a call at any time point between 8am-5pm is the same.
 
 Input:
-# numpy.random.poisson(lam=1.0, size=None)
-# Draw samples from a Poisson distribution. The Poisson distribution is the limit of the binomial distribution for large N.
+#### numpy.random.poisson(lam=1.0, size=None)
+#### Draw samples from a Poisson distribution. The Poisson distribution is the limit of the binomial distribution for large N.
 np.random.poisson(3, 100)
 
 Output:
@@ -821,22 +821,22 @@ import matplotlib.pyplot as plt
 Output:
 insert hist144
 
-# Exponential distributions
+### Exponential distributions
 Exponential distributions are a class of continuous probability distribution. An exponential distribution arises naturally when modeling the time between independent events that happen at a constant average rate. For example, if you receive 3 calls on average between 8am-5pm each day, then the hours you wait for the first call since 8am tomorrow should follow an exponential distribution with parameter 3 /9 1/3 calls hrs λ = = . The average time you wait for the new call since last call is the expectation of the distribution: 1/ 3hrs λ = 
 
-# Uniform Distribution
-# Discrete uniform distribution
+### Uniform Distribution
+#### Discrete uniform distribution
 Discrete uniform distribution is a discrete probability distribution: If a random variable has any of n possible values k1, k2, …, kn that are equally probable, then it has a discrete uniform distribution. The probability of any outcome ki is 1/n. A simple example of the discrete uniform distribution is throwing a fair die. The possible values of k are 1, 2, 3, 4, 5, 6; and each time the die is thrown, the probability of a given score is 1/6. 
 
-# Continuous uniform distribution
+#### Continuous uniform distribution
 Continuous uniform distribution is a family of probability distributions such that for each member of the family, all intervals of the same length on the distribution's support are equally probable. The support is defined by the two parameters, a and b, which are its minimum and maximum values. The distribution is often abbreviated U(a,b), e.g., U(0,1) is a member of this family and so is U(1,2).
 
 Input:
-# Draw samples from the distribution
+#### Draw samples from the distribution
 np.random.uniform(-1,0,1000)
 
 Input:
-# All values are within the given interval
+#### All values are within the given interval
 np.all(s >= -1)
 True
     np.all(s < 0)
@@ -845,12 +845,12 @@ True
 Output:
 True
 
-# Gamma Distribution
+### Gamma Distribution
 Samples are drawn from a Gamma distribution with specified parameters, shape (sometimes designated “k”) and scale (sometimes designated “theta”), where both parameters are > 0.
 
-# Beta Distribution
+### Beta Distribution
 
-# Question 4: Explain the use of seeds in generating pseudorandom numbers.
+### Question 4: Explain the use of seeds in generating pseudorandom numbers.
 
 'random.seed' gives a value to random value generator ('random.randint()') which generates these values based on this seed. A property of random numbers is that they should be reproducible. Once I use the same seed I get the same pattern of random numbers in the examples below. random is actually pseudo-random. Given a seed, it will generate numbers with an equal distribution. Using the same seed, it will generate the same number sequences every time. In order to change it, I would have to change my seed. Seed is often used based on the current time.
 Class Random can be subclassed in order to use a different basic generator: override the random(), seed(), getstate(), setstate() and jumpahead() methods.
@@ -863,7 +863,7 @@ Output:
 3
 
 Input:
-# Using seed will allow me to produce the same random integer each time
+#### Using seed will allow me to produce the same random integer each time
 random.seed(100)
 random.randint(1, 10)
 
@@ -871,7 +871,7 @@ Output:
 3
 
 Input:
-# Same results as above
+#### Same results as above
 random.seed(100)
 random.randint(1, 10)
 
@@ -879,7 +879,7 @@ Output:
 3
 
 Input:
-# Result has now changed as I have changed the see number to 101
+#### Result has now changed as I have changed the see number to 101
 random.seed(101)
 random.randint(1, 10)
 
@@ -887,7 +887,7 @@ Output:
 10
 
 Input:
-# Same results as above
+#### Same results as above
 random.seed(101)
 random.randint(1, 10)
 
@@ -895,7 +895,7 @@ Output:
 10
 
 Input:
-# prints 6 random numbers between 1 and 50
+#### prints 6 random numbers between 1 and 50
 random.seed(10)
 for i in range(6):
         print(random.randint(1,50))
@@ -909,7 +909,7 @@ Output:
 1
 
 Input:
-# Prints the same output as above as it is the same seed
+#### Prints the same output as above as it is the same seed
 random.seed(10)
 for i in range(6):
         print(random.randint(1,50))
@@ -923,7 +923,7 @@ Output:
 1
 
 Input:
-# Change the seed to change the output random integer values
+#### Change the seed to change the output random integer values
 random.seed(20)
 for i in range(6):
         print(random.randint(1,50))
@@ -937,7 +937,7 @@ Output:
 44
 
 Input:
-# use seed to create a random number
+#### use seed to create a random number
 random.seed(30)
 random.random()
 
@@ -945,14 +945,14 @@ Output:
 0.5390815646058106
 
 Input:
-# Do not use seed
+#### Do not use seed
 random.random()
 
 Output:
 0.2891964436397205
 
 Input:
-# Use seed again and it will output the same random number as previous seed(30) above
+#### Use seed again and it will output the same random number as previous seed(30) above
 random.seed(30)
 random.random()
 
@@ -960,10 +960,10 @@ Output:
 0.5390815646058106
 
 
-## 6.0 Summary
+### 6.0 Summary
 
 
-## 7.0 References
+### 7.0 References
 
 *List all references used throughout the project.*
 
