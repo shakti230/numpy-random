@@ -8,13 +8,13 @@
 
 ### Table of Contents
 
-### 1.0 Invetigation
-### 2.0 Question 1: Explain the overall purpose of the package.
-### 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
-### 4.0 Question 3: Explain the use and purpose of at least five “Distributions” functions.
-### 5.0 Question 4: Explain the use of seeds in generating pseudorandom numbers.
-### 6.0 Summary
-### 7.0 References
+## 1.0 Invetigation
+## 2.0 Question 1: Explain the overall purpose of the package.
+## 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
+## 4.0 Question 3: Explain the use and purpose of at least five “Distributions” functions.
+## 5.0 Question 4: Explain the use of seeds in generating pseudorandom numbers.
+## 6.0 Summary
+## 7.0 References
 
 
 ### 1. Investigation
