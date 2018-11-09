@@ -6,18 +6,18 @@
 </br>
 </p>
 
-### Table of Contents
+## Table of Contents
 
-## 1.0 Invetigation
-## 2.0 Question 1: Explain the overall purpose of the package.
-## 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
-## 4.0 Question 3: Explain the use and purpose of at least five “Distributions” functions.
-## 5.0 Question 4: Explain the use of seeds in generating pseudorandom numbers.
-## 6.0 Summary
-## 7.0 References
+### 1.0 Invetigation
+### 2.0 Question 1: Explain the overall purpose of the package.
+### 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
+### 4.0 Question 3: Explain the use and purpose of at least five “Distributions” functions.
+### 5.0 Question 4: Explain the use of seeds in generating pseudorandom numbers.
+### 6.0 Summary
+### 7.0 References
 
 
-### 1. Investigation
+## 1. Investigation
 
 *Write some Python code to investigate numpy.*
 
@@ -35,7 +35,7 @@ Some of the popular libraries used for simple random data anslysis, permutations
 <p align="center">
   
 
-### 2.0 Question 1: Explain the overall purpose of the package
+## 2.0 Question 1: Explain the overall purpose of the package
 
 NumPy is the fundamental package for scientific computing with Python. It contains among other things:
 
@@ -65,7 +65,7 @@ NumPy is an important Python extension module that provides easily efficient ope
 One of NumPy’s very important goals is compatibility, which tries to retain all features supported by either of its predecessors. NumPy contains few linear algebra functions, even though these more properly belong in SciPy. SciPy contains more fully-featured versions of the linear algebra modules, and many other numerical algorithms.
 
 
-### 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
+## 3.0 Question 2: Explain the use of the "Simple Random Data" and the Permutations functions.
 
 
 #### Using np.random functions to generate simple data
@@ -106,13 +106,13 @@ Out[5]:
 In machine learning we can use libraries such as scikit-learn and Keras. Using these libraries make use of NumPy, which is a very efficient library when working with vectors and matrices of numbers. NumPy also has its own implementation of a pseudorandom number generator and convenience wrapper functions. NumPy also implements the Mersenne Twister pseudorandom number generator.
 
 Input:
-# Create a 1D array
+#### Create a 1D array
 np.random.rand(5)
 
 Output:
 array([0.88439232, 0.14191216, 0.87363317, 0.33119369, 0.41399057])
 
-# Create a 2D array
+#### Create a 2D array
 #Use a simple random function in numpy by setting values to create an array with 3 rows and 2 columns of random data.
 np.random.rand(3, 2)
 
@@ -122,7 +122,7 @@ array([[0.11103511, 0.50725747],
        [0.62064798, 0.80827445]])
        
        
-# Use a simple random function in numpy by setting values to create an array with 3 rows and 4 columns of random data.
+#### Use a simple random function in numpy by setting values to create an array with 3 rows and 4 columns of random data.
 Input:
 import numpy as np
 np.random.rand(3, 4)
@@ -132,7 +132,7 @@ array([[0.62037717, 0.62329214, 0.81521343, 0.81478059],
        [0.33778278, 0.81295036, 0.94827048, 0.17030383],
        [0.58024849, 0.94107027, 0.15841619, 0.92230211]])
        
-# Create a 3D array
+#### Create a 3D array
 Input:
 np.random.rand(3, 2, 2)
 
@@ -146,7 +146,7 @@ array([[[0.7641413 , 0.35916858],
        [[0.58961022, 0.19239563],
         [0.68682527, 0.66106053]]])
         
-# Create a 3x3 array with random values
+#### Create a 3x3 array with random values
 Input:
 x = np.random.random((3,3,3))
 print(x)
@@ -164,7 +164,7 @@ Output:
   [9.64408666e-01 5.54696322e-01 1.95098184e-01]
   [5.30336471e-01 1.63101966e-01 6.35840077e-01]]]
   
-# Create a 10x10 array with random values and show the minimum and maximum values
+#### Create a 10x10 array with random values and show the minimum and maximum values
 Input:
 x = np.random.random((10,10))
 xmin, xmax = x.min(), x.max()
@@ -173,7 +173,7 @@ print(xmin, xmax)
 Output:
 0.013928171204602657 0.9070049707597532
 
-# Create a random vector of size 20 and show the mean value
+#### Create a random vector of size 20 and show the mean value
 Input:
 x = np.random.random(20)
 m = x.mean()
@@ -182,7 +182,7 @@ print(m)
 Output:
 0.4811550867638397
 
-# Swop two rows in an array. Author: Eelco Hoogendoorn
+#### Swop two rows in an array. Author: Eelco Hoogendoorn
 Input:
 A = np.arange(25).reshape(5,5)
 A[[0,1]] = A[[1,0]]
@@ -195,7 +195,7 @@ Output:
  [15 16 17 18 19]
  [20 21 22 23 24]]
  
-# Create a null vector of size 10
+#### Create a null vector of size 10
 Input:
 import numpy as np
 x = np.zeros(10)
@@ -204,7 +204,7 @@ print(x)
 Output:
 [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
 
-# Update the 5th value to 12
+#### Update the 5th value to 12
 Input:
 x[5]=12
 print(x)
@@ -212,8 +212,8 @@ print(x)
 Output:
 [ 0.  0.  0.  0.  0. 12.  0.  0.  0.  0.]
 
-# Reverse a vector making the first element the last
-Input:
+### Reverse a vector making the first element the last
+Inp#ut:
 x = np.arange(50)
 x = x[::-1]
 print(x)
@@ -223,7 +223,7 @@ Output:
  25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10  9  8  7  6  5  4  3  2
   1  0]
   
-# Set the parameter of 100 to define te dimensions of the array
+#### Set the parameter of 100 to define te dimensions of the array
 Input:
 x = np.random.rand(100)
 x
@@ -250,7 +250,7 @@ array([0.86540077, 0.98276959, 0.03667397, 0.03908545, 0.76306268,
        0.18724072, 0.25552766, 0.43429069, 0.31390278, 0.69675783,
        0.8611739 , 0.24111164, 0.10220595, 0.93824736, 0.43383612])
        
-# Import matplotlib to plot a graph
+#### Import matplotlib to plot a graph
 Input:
 #Import matplotlib package
 import matplotlib.pyplot as plt
@@ -263,7 +263,7 @@ insert image
 
 Using the matplotlib package above allows for the creation of a graph. It has plotted the random data generated from the .rand function. The random numbers are generated across the plot.
 
-# Normalise a 5x5 random matrix
+#### Normalise a 5x5 random matrix
 Input:
 x = np.random.random((5,5))
 xmax, xmin = x.max(), x.min()
@@ -277,7 +277,7 @@ Output:
  [0.07421018 0.64466399 0.8477277  0.32922389 0.42274363]
  [0.94338165 0.52829323 0.48272391 0.2286424  0.91006357]]
 
-# Create a random array of size 10 and sort it
+#### Create a random array of size 10 and sort it
 Input:
 x = np.random.random(10)
 x.sort()
@@ -296,16 +296,16 @@ array([[3.25912672, 3.86000573, 3.64816683, 3.03381164],
        [3.30956289, 3.93256392, 3.02405371, 3.0050986 ],
        [3.39671306, 3.22835336, 3.10635108, 3.98686132]])
 
-# Using Randint
+#### Using Randint
 
-# Use a simple random randint function in numpy to list an array of integers.
-# Display in the range of 0-10 with 20 digits displayed.
+#### Use a simple random randint function in numpy to list an array of integers.
+#### Display in the range of 0-10 with 20 digits displayed.
 Input:
 np.random.randint(0, 10, 20)
 
 array([3, 9, 1, 3, 4, 9, 6, 9, 4, 7, 1, 1, 6, 1, 4, 7, 2, 2, 8, 9])
 
-# Use a simple random function to list an array of random integers in the range 1-7 with 10 rows and 3 columns.
+#### Use a simple random function to list an array of random integers in the range 1-7 with 10 rows and 3 columns.
 Input:
 x = np.random.randint(1, 7, (10,3))
 x
