@@ -69,13 +69,6 @@ data = [['np.random.rand','Generates random values of given shape.'],
        ['np.random.shuffle', 'Modifies the sequence by shuffling its contents.']]
 pd.DataFrame(data, columns=["Simple random data", "Description"])
 
-Output: insert image here
-
-
-#Import the numpy package
-import numpy as np
-
-
 #### Random.random()
 This is the basic way to create a random number(s) which will be imported from the random module.
 
@@ -243,8 +236,6 @@ import numpy as np
 x = plt.hist(np.random.rand(100))
 plt.show() 
 
-Output: 
-insert image
 
 Using the matplotlib package above allows for the creation of a graph. It has plotted the random data generated from the .rand function. The random numbers are generated across the plot.
 
@@ -369,26 +360,16 @@ import matplotlib.pyplot as plt
 plt.hist(x)
 plt.show() 
 
-Output:
-insert matplotlib25
-
 Input:
 import matplotlib.pyplot as plt
 x = np.random.randint(1,7, (100,10))
 y = np.sum(x, axis=1)
 plt.hist(y);
 
-Output:
-insert matplotlib49
-
 Input:
 x = np.random.randint(1,7, (100000,10))
 y = np.sum(x, axis=1)
 plt.hist(y);
-
-Output:
-insert histogram51
-
 
 #### Using Randn
 Using randn to return a random sample for the normal distribution
@@ -431,9 +412,6 @@ plt.plot(x, y, 'b-')
 
 plt.show
 
-Output:
-insert scatter 19
-
 Input:
 #### import matplotlib for graphs
 import matplotlib.pyplot as plt 
@@ -452,9 +430,6 @@ plt.legend()
 
 plt.show
 
-Output:
-scatter18
-
 
 #### Plot 2 graphs 
 Input:
@@ -465,9 +440,6 @@ plt.subplot(1, 2, 2)
 x =  np.random.uniform(-20, .2, 2000)
 plt.hist(x)
 plt.show
-
-Output:
-insert hist 28
 
 #### Using Uniform
 random.uniform(a, b) Return a random floating point number N such that a <= N <= b for a <= b and b <= N <= a for b < a.~
@@ -830,10 +802,25 @@ True
 Output:
 True
 
-### Gamma Distribution
-Samples are drawn from a Gamma distribution with specified parameters, shape (sometimes designated “k”) and scale (sometimes designated “theta”), where both parameters are > 0.
+### Normal Distribution
+A Normal Distribution (Gaussian) is a continuous probability distribution. The normal distribution is often referred to as a bell curve. Properties of a normal distribution are outlined below:
+- The normal curve is symmetric about the mean and bell shaped.
+- Mean, mode and median is zero and positioned at the centre of the curve.
+- Approximately 68% of the data will be between -1 and +1 (i.e. within 1 standard deviation from the mean), 95% between -2 and +2 (within 2 SD from the mean) and 99.7% between -3 and 3 (within 3 SD from the mean)
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.stats import norm
+
+Input:
+#Get median, mean, standard deviation and var
+print(norm.median(), norm.mean(), norm.std(), norm.var())
+Output:
+0.0 0.0 1.0 1.0
 
 ### Beta Distribution
+Beta distribution is well known distribution for probabilities. Beta distribution is a continuous distribution taking values from 0 to 1. Alpha and Beta are the two parameters which define it. Depending on the values of alpha and beta, the distributions can differ.
 
 ### Question 4: Explain the use of seeds in generating pseudorandom numbers.
 
