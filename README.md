@@ -336,7 +336,7 @@ y
 array([16,  9, 10, 13, 14, 14, 10, 12, 12, 13])
 
 ### Data Visualisation
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/36244887/48292682-35d00f80-e473-11e8-8859-550f6f56c70f.JPG)
 
 Matplotlib produces publication-quality figures in a variety of formats, and interactive environments across Python platforms. Another advantage is that Pandas comes equipped with useful wrappers around several matplotlib plotting routines, allowing for quick and handy plotting of Series and DataFrame objects.
 The matplotlib library supports a large number of plot types useful for data visualization. Some common types of of plot types include: scatter plots, bar plots, contour plots, and histograms.
